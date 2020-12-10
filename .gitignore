@@ -1,10 +1,14 @@
 Tensorflow/addons/*
 !Tensorflow/addons/.gitkeep
 
-TensorFlow/workspace/train_demo/images/train/*
-TensorFlow/workspace/train_demo/images/test/*
-!TensorFlow/workspace/train_demo/images/train/.gitkeep
-!TensorFlow/workspace/train_demo/images/test/.gitkeep
+TensorFlow/workspace/training_demo/images/train/*
+!TensorFlow/workspace/training_demo/images/train/.gitkeep
+
+TensorFlow/workspace/training_demo/images/test/*
+!TensorFlow/workspace/training_demo/images/test/.gitkeep
+
+Tensorflow/models/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
