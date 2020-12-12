@@ -11,7 +11,8 @@ from object_detection.utils import dataset_util, label_map_util
 
 
 labels_path = './TensorFlow/workspace/training_demo/annotations/label_map.pbtxt'
-xml_path = './TensorFlow/workspace/training_demo/images/train/'
+xml_path = './TensorFlow/workspace/training_demo/images/test/'
+tfrecord_file = './TensorFlow/workspace/training_demo/annotations/test.record'
 
 label_map = label_map_util.load_labelmap(labels_path)
 label_map_dict = label_map_util.get_label_map_dict(label_map) # {'class1': 1, 'class2': 2, ...}
@@ -119,7 +120,7 @@ grouped = split(xml_df, 'filename')
 print(grouped[0].filename)
 print(grouped[0].object)
 
-tfrecord_file = './TensorFlow/workspace/training_demo/annotations/train.record'
+
 with tf.io.TFRecordWriter(tfrecord_file) as writer:
     for group in grouped:
         tf_example = create_tf_example(group, xml_path)

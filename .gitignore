@@ -9,6 +9,7 @@ TensorFlow/workspace/training_demo/images/test/*
 
 Tensorflow/models/
 
+notes.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
