@@ -7,6 +7,9 @@ TensorFlow/workspace/training_demo/images/train/*
 TensorFlow/workspace/training_demo/images/test/*
 !TensorFlow/workspace/training_demo/images/test/.gitkeep
 
+TensorFlow/workspace/training_demo/pre-trained-models/*
+!TensorFlow/workspace/training_demo/pre-trained-models/.gitkeep
+
 Tensorflow/models/
 
 notes.txt
